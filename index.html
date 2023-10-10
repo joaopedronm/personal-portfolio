@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/media-query.css">
+    <!-- LOGO -->
+    <link rel="shortcut icon" type="imagex/png" href="./assets/images/icon.png">
+    <title>João Pedro - Personal Site</title>
 </head>
 <body>
     <!-- HEADER -->
@@ -18,28 +21,28 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#sobre" class="nav__link">
+                        <a href="#about" class="nav__link">
                             <i class="uil uil-user nav__icon"></i> Sobre
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#habilidades" class="nav__link">
+                        <a href="#skills" class="nav__link">
                             <i class="uil uil-file-alt nav__icon"></i> Habilidades
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#servicos" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfólio
+                        <a href="#qualifications" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Experiência
                         </a>
                     </li>
                     
                     <li class="nav__item">
-                        <a href="#contato" class="nav__link">
+                        <a href="#contact" class="nav__link">
                             <i class="uil uil-message nav__icon"></i> Contato
                         </a>
                     </li>
@@ -48,6 +51,10 @@
             </div>
 
             <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -98,7 +105,7 @@
                         <h1 class="home__title">Olá, sou o JP</h1>
                         <h3 class="home__subtitle">Desenvolvedor Front-End</h3>
                         <p class="home__description">
-                            Profissional com muita experiência nas principais linguagens front-end, frameworkd, banco de dados e muito mais.
+                            Profissional com sólidos conhecimentos em HTML, CSS, Javascript, Typescript, React e Angular, adquiridos através de cursos, projetos pessoais e estudo autodidata.
                         </p>
                         <a href="#contact" class="button button--flex">
                             Fale comigo<i class="uil uil-message button__icon"></i>
@@ -122,13 +129,10 @@
             <span class="section__subtitle">Uma breve apresentação</span>
 
             <div class="about__container container grid">
-                <img src="./assets/images/about.jpg" alt="" class="about__img">
+                <img src="./assets/images/about-2.jpeg" alt="" class="about__img">
             
                 <div class="about__data">
-                    <p class="about__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        A, voluptatem iste blanditiis eum labore dolorum numquam, eaque
-                        facilis error veniam, ratione suscipit voluptate?
-                        Quis magni ipsum ut corrupti, voluptatum eveniet.
+                    <p class="about__description">Sou um entusiasta do front-end com uma formação sólida em Física, que me trouxe uma mentalidade analítica e a habilidade de abordar problemas complexos de forma estruturada.
                     </p>
 
                     <div class="about__info">
@@ -138,13 +142,13 @@
                         </div>
 
                         <div>
-                            <span class="about__info-title">10+</span>
+                            <span class="about__info-title">17+</span>
                             <span class="about__info-name">Projetos <br> completos</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">08+</span>
-                            <span class="about__info-name">Anos <br> experiência</span>
+                            <span class="about__info-title">5+</span>
+                            <span class="about__info-name">Formações <br> sólidas</span>
                         </div>
                     </div>
 
@@ -234,7 +238,7 @@
         </section>
 
         <!-- QUALIFICATIONS -->
-        <section class="qualification section">
+        <section class="qualification section" id="qualifications">
             <h2 class="section__title">Experiência</h2>
             <span class="section__subtitle">Minha experiência profissional e acadêmica</span>
 
@@ -423,6 +427,53 @@
             </div>
         </section>
     </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">João Pedro</h1>
+                    <span class="footer__subtitle">Desenvolvedor Front-end</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfólio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https:://www.twitter.com" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; João Pedro. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+
+    <!-- SCROLL TOP -->
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
     
 
 
