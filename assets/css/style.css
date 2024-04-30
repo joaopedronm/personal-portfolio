@@ -492,19 +492,23 @@ img {
 }
 
 .skills__css {
-    width: 80%;
+    width: 90%;
 }
 
 .skills__js {
-    width: 70%;
+    width: 80%;
 }
 
 .skills__react {
     width: 60%;
 }
 
-.skills__angular {
-    width: 30%;
+.skills__java {
+    width: 60%;
+}
+
+.skills__node {
+    width: 70%;
 }
 
 .skills__close .skills__list {
