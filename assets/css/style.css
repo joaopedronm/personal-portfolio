@@ -252,6 +252,10 @@ img {
     color: var(--first-color-alt);
 }
 
+.image__logo {
+    width: 40px;
+}
+
 /* SHOW MENU */
 
 .show-menu {
@@ -865,6 +869,10 @@ margin-bottom: var(--mb-2-5);
 
     .nav__menu {
         margin-left: auto;
+    }
+
+    .image__logo {
+        width: 80px;
     }
 
     .change-theme {
